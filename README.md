@@ -1,2 +1,2 @@
-# xtrade
+# XTrade
 simnow go API
