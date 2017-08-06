@@ -1,3 +1,4 @@
 language: go
-sudo: false
-script: ls -al && cp libs/libthos* /usr/lib/ && go build
+sudo: true
+before_script: ls -al && sudo cp libs/libthos*
+script:  /usr/lib/ && go build
