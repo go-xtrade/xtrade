@@ -1,7 +1,7 @@
 package api
 
 // #cgo CFLAGS: -std=c99
-// #cgo LDFLAGS: -L./libs -lthosttraderapi
+// #cgo LDFLAGS: -L${SRCDIR}/github.com/go-xtrade/xtrade/libs -lthosttraderapi
 // #cgo LDFLAGS: -lstdc++
 // #include "trade.h"
 // #include <stdlib.h>
