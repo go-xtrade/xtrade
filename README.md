@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #XTrade
 SimNow go API
 ## 启动
