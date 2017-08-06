@@ -1,3 +1,4 @@
 language: go
 sudo: true
+before_script: ./copy_lib.sh
 script:  go build -x
