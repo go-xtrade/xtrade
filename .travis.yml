@@ -1,4 +1,4 @@
 language: go
 sudo: true
-before_script: ls -al && sudo cp libs/libthos* /usr/local/lib/
+before_install: ./copy_lib.sh
 script:  go build
