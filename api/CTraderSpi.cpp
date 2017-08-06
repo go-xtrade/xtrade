@@ -56,27 +56,14 @@ void CTraderSpi::OnRspUserLogin(CThostFtdcRspUserLoginField *pRspUserLogin,
 {
 
 	UserLoginCallback(pRspUserLogin,pRspInfo,nRequestID,bIsLast);
-	// OnLogin();
 	cerr << "--->>> " << "OnRspUserLogin: " <<  pRspUserLogin->UserID << "bIsLast" << bIsLast  << "MaxOrderRef : " <<  atoi(pRspUserLogin->MaxOrderRef) << endl;
-	// if (bIsLast && !IsErrorRspInfo(pRspInfo))
-	// {
-	// 	// 保存会话参数
-	// 	FRONT_ID = pRspUserLogin->FrontID;
-	// 	SESSION_ID = pRspUserLogin->SessionID;
-	// 	int iNextOrderRef = atoi(pRspUserLogin->MaxOrderRef);
-	// 	iNextOrderRef++;
-	// 	sprintf(ORDER_REF, "%d", iNextOrderRef);
-	// 	///获取当前交易日
-	// 	cerr << "--->>> 获取当前交易日 = " << pUserApi->GetTradingDay() << endl;
-	// 	///投资者结算结果确认 
-	// pUserApi = (CThostFtdcTraderApi *) GetTraderAPI();
-		// ReqSettlementInfoConfirm();
-	// }
+
 }
 
 void CTraderSpi::ReqSettlementInfoConfirm()
 {
 	CThostFtdcSettlementInfoConfirmField req;
+
 	memset(&req, 0, sizeof(req));
 	strcpy(req.BrokerID, BROKER_ID);
 	strcpy(req.InvestorID, INVESTOR_ID);
