@@ -1,7 +1,7 @@
 package api
 
 // #cgo CFLAGS: -std=c99
-// #cgo LDFLAGS: -lthosttraderapi
+// #cgo LDFLAGS: -L${SRCDIR}/../libs -lthosttraderapi
 // #cgo LDFLAGS: -lstdc++
 // #include "trade.h"
 // #include <stdlib.h>

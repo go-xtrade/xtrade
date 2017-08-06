@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gopkg.in/xtrade.v0/api"
+	"xtrade/api"
 	"fmt"
 	"time"
 )
