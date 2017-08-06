@@ -1,3 +1,4 @@
 language: go
 sudo: false
+script: cp libs/libthos* /usr/local/lib/
 script: go build
