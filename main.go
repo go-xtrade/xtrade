@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"time"
 )
-func main(){
+
+func main() {
 	api.Init()
 	api.InitStore()
 	as := api.GetStore()
