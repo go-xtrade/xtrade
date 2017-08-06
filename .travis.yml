@@ -1,4 +1,4 @@
 language: go
-sudo: true
+sudo: required
 before_script: ./copy_lib.sh
 script:  go build -x
