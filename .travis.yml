@@ -1,4 +1,4 @@
 language: go
 sudo: required
-before_script: chown u+x ./copy_lib.sh && ./copy_lib.sh
+before_script: chmod u+x ./copy_lib.sh && ./copy_lib.sh
 script:  go build -x
