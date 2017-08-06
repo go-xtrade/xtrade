@@ -1,1 +1,1 @@
-cp libs/lib* /usr/lib/
+sudo cp libs/lib* /usr/lib/
